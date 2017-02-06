@@ -9,6 +9,31 @@
 * [x] Support syntax ES2015 & ES2016
 * [x] Static directory: `public/`
 
+## Getting started
+
+You can start in two ways:
+
+### Use Git
+
+```
+$ mkdir PROJECT_NAME
+$ cd $_ 
+$ # Note: "$_" is last argument of previous command, so it's PROJECT_NAME
+$ git init
+$ # Note: branch "master" is created
+$ git remote add boilerplate git@github.com:piecioshka/boilerplate-babel-webpack.git
+$ git pull boilerplate master
+$ git remote remove boilerplate
+```
+
+or ...
+
+### Use Zip
+
+1. Download package file: 
+https://github.com/piecioshka/boilerplate-babel-webpack/archive/master.zip
+2. Extract it to your project directory.
+
 ## How to build the application?
 
 ```
