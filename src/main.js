@@ -1,3 +1,3 @@
-import file from './file'
+import testModule from './test-file'
 
-file.test();
+testModule.test();

@@ -1,9 +1,11 @@
 {
     "private": true,
     "name": "boilerplate-babel-webpack",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "scripts": {
-        "build": "webpack"
+        "clear": "rm -rf public/dist/",
+        "build": "webpack",
+        "watch": "webpack -w"
     },
     "devDependencies": {
         "babel-core": "^6.22.1",
