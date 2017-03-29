@@ -12,6 +12,8 @@ module.exports = {
         path: path.resolve('./public/dist')
     },
 
+    devtool: '#cheap-source-map',
+
     module: {
         rules: [
             {

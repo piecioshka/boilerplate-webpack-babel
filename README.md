@@ -5,9 +5,11 @@
 ## Features
 
 * [x] Webpack v2.3.2
-* [x] Babel Core v6.24.0
+* [x] Babel v6.24.0
 * [x] Support syntax ES2015 & ES2016
 * [x] Static directory: `public/`
+* [x] Source Map of bundle file.
+* [x] Analysis of bundle file weight.
 
 ## Getting started
 
@@ -18,9 +20,15 @@ You can start in two ways:
 ```
 $ mkdir PROJECT_NAME
 $ cd $_ 
-$ # Note: "$_" is last argument of previous command, so it's PROJECT_NAME
+$ # Note: "$_" is last argument of previous command, so it's a PROJECT_NAME
+```
+
+```
 $ git init
 $ # Note: branch "master" is created
+```
+
+```
 $ git remote add boilerplate git@github.com:piecioshka/boilerplate-babel-webpack.git
 $ git pull boilerplate master
 $ git remote remove boilerplate
@@ -42,6 +50,8 @@ $ npm run build
 # Open public/ directory in browser
 ```
 
+Your source will be minified.
+
 ## How to develop the application?
 
 ```
@@ -50,12 +60,34 @@ $ npm run watch
 # Open public/ directory in browser
 ```
 
-## Misc
+## Remove generated directory
 
-If you would like to remove directory created by Webpack use command:
+If you would like to remove `public/dist` directory (created by Webpack):
 
 ```
 $ npm run clear
+```
+
+If you would like to remove `node_modules/` and remove `public/dist/`
+
+```
+$ npm run clear:all
+```
+
+## Count LOC (Lines of Code)
+
+If you would like to know how many lines of code you write:
+
+```
+$ npm run count
+```
+
+## Audit bundle file for weight
+
+If you would like to check how much a bundle file weight:
+
+```
+$ npm run audit
 ```
 
 ## License
