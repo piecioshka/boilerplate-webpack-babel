@@ -1,4 +1,7 @@
-# boilerplate-babel-webpack
+# boilerplate-babel-webpack ([npm](https://www.npmjs.com/package/boilerplate-babel-webpack))
+
+![](https://badge.fury.io/js/boilerplate-babel-webpack.svg)
+![](https://img.shields.io/npm/dt/boilerplate-babel-webpack.svg)
 
 > :fork_and_knife: Starter with Babel.js and Webpack
 
@@ -19,16 +22,8 @@ You can start in two ways:
 
 ```
 $ mkdir PROJECT_NAME
-$ cd $_ 
-$ # Note: "$_" is last argument of previous command, so it's a PROJECT_NAME
-```
-
-```
-$ git init
-$ # Note: branch "master" is created
-```
-
-```
+$ cd $_     # Note: "$_" is last argument of previous command
+$ git init  # Note: branch "master" is created
 $ git remote add boilerplate git@github.com:piecioshka/boilerplate-babel-webpack.git
 $ git pull boilerplate master
 $ git remote remove boilerplate
@@ -38,7 +33,7 @@ or ...
 
 ### Use Zip
 
-1. Download package file: 
+1. Download package file:<br/>
 https://github.com/piecioshka/boilerplate-babel-webpack/archive/master.zip
 2. Extract it to your project directory.
 
@@ -82,7 +77,7 @@ If you would like to know how many lines of code you write:
 $ npm run count
 ```
 
-## Audit bundle file for weight
+## Analysis of bundle file weight
 
 If you would like to check how much a bundle file weight:
 
