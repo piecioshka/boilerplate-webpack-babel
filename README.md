@@ -4,8 +4,8 @@
 
 ## Features
 
-* [x] Webpack v2.2.1
-* [x] Babel Core v6.22.1
+* [x] Webpack v2.3.2
+* [x] Babel Core v6.24.0
 * [x] Support syntax ES2015 & ES2016
 * [x] Static directory: `public/`
 
