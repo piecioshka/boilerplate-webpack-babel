@@ -1,5 +1,4 @@
 {
-    "private": true,
     "name": "boilerplate-babel-webpack",
     "version": "1.0.3",
     "scripts": {
