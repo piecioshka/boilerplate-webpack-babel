@@ -1,13 +1,15 @@
 'use strict';
 
+let path = require('path');
+
 module.exports = {
     entry: {
-        main: './src/main.js'
+        main: path.resolve('./src/main.js')
     },
 
     output: {
         filename: '[name].bundle.js',
-        path: './public/dist'
+        path: path.resolve('./public/dist')
     },
 
     module: {
