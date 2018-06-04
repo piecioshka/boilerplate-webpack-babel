@@ -7,12 +7,12 @@
 
 ## Features
 
-* [x] Webpack v2.3.2
-* [x] Babel v6.24.0
-* [x] Support syntax ES2015 & ES2016
-* [x] Static directory: `public/`
-* [x] Source Map of bundle file.
-* [x] Analysis of bundle file weight.
+* :white_check_mark: Webpack v2.3.2
+* :white_check_mark: Babel v6.24.0
+* :white_check_mark: Support syntax ES2015 & ES2016
+* :white_check_mark: Static directory: `public/`
+* :white_check_mark: Source Map of bundle file.
+* :white_check_mark: Analysis of bundle file weight.
 
 ## Getting started
 
