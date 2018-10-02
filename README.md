@@ -1,9 +1,10 @@
-# boilerplate-babel-webpack ([npm](https://www.npmjs.com/package/boilerplate-babel-webpack))
+# boilerplate-babel-webpack
 
-![](https://badge.fury.io/js/boilerplate-babel-webpack.svg)
-![](https://img.shields.io/npm/dt/boilerplate-babel-webpack.svg)
+[![npm version](https://badge.fury.io/js/boilerplate-babel-webpack.svg)](https://badge.fury.io/js/boilerplate-babel-webpack)
+[![downloads count](https://img.shields.io/npm/dt/boilerplate-babel-webpack.svg)](https://www.npmjs.com/~piecioshka)
+[![dependencies](https://david-dm.org/piecioshka/boilerplate-babel-webpack.svg)](https://github.com/piecioshka/boilerplate-babel-webpack)
 
-> :fork_and_knife: Starter with Babel.js and Webpack
+:fork_and_knife: Starter with Babel.js and Webpack
 
 ## Features
 
@@ -20,13 +21,13 @@ You can start in two ways:
 
 ### Use Git
 
-```
-$ mkdir PROJECT_NAME
-$ cd $_     # Note: "$_" is last argument of previous command
-$ git init  # Note: branch "master" is created
-$ git remote add boilerplate git@github.com:piecioshka/boilerplate-babel-webpack.git
-$ git pull boilerplate master
-$ git remote remove boilerplate
+```bash
+mkdir PROJECT_NAME
+cd $_     # Note: "$_" is last argument of previous command
+git init  # Note: branch "master" is created
+git remote add boilerplate git@github.com:piecioshka/boilerplate-babel-webpack.git
+git pull boilerplate master
+git remote remove boilerplate
 ```
 
 or ...
@@ -39,9 +40,9 @@ https://github.com/piecioshka/boilerplate-babel-webpack/archive/master.zip
 
 ## How to build the application?
 
-```
-$ npm install
-$ npm run build
+```bash
+npm install
+npm run build
 # Open public/ directory in browser
 ```
 
@@ -49,9 +50,9 @@ Your source will be minified.
 
 ## How to develop the application?
 
-```
-$ npm install
-$ npm run watch
+```bash
+npm install
+npm run watch
 # Open public/ directory in browser
 ```
 
@@ -59,30 +60,30 @@ $ npm run watch
 
 If you would like to remove `public/dist` directory (created by Webpack):
 
-```
-$ npm run clear
+```bash
+npm run clear
 ```
 
 If you would like to remove `node_modules/` and remove `public/dist/`
 
-```
-$ npm run clear:all
+```bash
+npm run clear:all
 ```
 
 ## Count LOC (Lines of Code)
 
 If you would like to know how many lines of code you write:
 
-```
-$ npm run count
+```bash
+npm run count
 ```
 
 ## Analysis of bundle file weight
 
 If you would like to check how much a bundle file weight:
 
-```
-$ npm run audit
+```bash
+npm run audit
 ```
 
 ## License
