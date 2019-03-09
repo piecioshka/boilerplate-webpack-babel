@@ -13,16 +13,17 @@
         "clear": "rm -rf public/dist/",
         "clear:all": "rm -rf node_modules/ && npm run clear",
         "count": "find src -name '*.js' | xargs wc -l | sort -r",
-        "build": "webpack -p",
-        "watch": "webpack -w"
+        "build": "webpack",
+        "watch": "webpack -w",
+        "start": "node public/dist/main.bundle.js"
     },
     "devDependencies": {
-        "babel-core": "^6.24.0",
-        "babel-loader": "^6.4.1",
-        "babel-preset-es2015": "^6.24.0",
-        "babel-preset-es2016": "^6.22.0",
-        "source-map-explorer": "^1.3.3",
-        "webpack": "^2.3.2"
+        "@babel/core": "^7.3.4",
+        "@babel/preset-env": "^7.3.4",
+        "babel-loader": "^8.0.5",
+        "source-map-explorer": "^1.7.0",
+        "webpack": "^4.29.6",
+        "webpack-cli": "^3.2.3"
     },
     "keywords": [
         "webpack",
