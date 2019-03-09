@@ -8,9 +8,9 @@
 
 ## Features
 
-* :white_check_mark: Webpack v2.3.2
-* :white_check_mark: Babel v6.24.0
-* :white_check_mark: Support syntax ES2015 & ES2016
+* :white_check_mark: Webpack v4.29.6
+* :white_check_mark: Babel v7.3.4
+* :white_check_mark: Support syntax ES2015 & ES2016 & ES2017 & ES2018
 * :white_check_mark: Static directory: `public/`
 * :white_check_mark: Source Map of bundle file.
 * :white_check_mark: Analysis of bundle file weight.
