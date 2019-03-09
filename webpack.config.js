@@ -1,8 +1,10 @@
 'use strict';
 
-let path = require('path');
+const path = require('path');
 
 module.exports = {
+    mode: 'production',
+
     entry: {
         main: path.resolve('./src/main.js')
     },
@@ -12,7 +14,7 @@ module.exports = {
         path: path.resolve('./public/dist')
     },
 
-    devtool: '#cheap-source-map',
+    devtool: '#source-map',
 
     module: {
         rules: [
