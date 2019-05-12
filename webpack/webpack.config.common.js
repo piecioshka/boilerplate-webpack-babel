@@ -3,8 +3,6 @@
 const path = require('path');
 
 module.exports = {
-    mode: 'production',
-
     entry: {
         main: path.resolve('./src/main.js')
     },
@@ -13,8 +11,6 @@ module.exports = {
         filename: '[name].bundle.js',
         path: path.resolve('./public/dist')
     },
-
-    devtool: '#source-map',
 
     module: {
         rules: [

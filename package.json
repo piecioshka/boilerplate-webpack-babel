@@ -13,8 +13,10 @@
         "clear": "rm -rf public/dist/",
         "clear:all": "rm -rf node_modules/ && npm run clear",
         "count": "find src -name '*.js' | xargs wc -l | sort -r",
-        "build": "webpack",
-        "watch": "webpack -w",
+        "build": "npm run build:development",
+        "build:development": "webpack --config webpack/webpack.config.dev.js",
+        "build:production": "webpack --config webpack/webpack.config.prod.js",
+        "watch": "npm run build:development -- -w",
         "start": "node public/dist/main.bundle.js"
     },
     "devDependencies": {
@@ -27,12 +29,16 @@
     },
     "keywords": [
         "webpack",
+        "module",
+        "bundler",
         "babel",
         "starter",
+        "boilerplate",
         "source map",
         "explorer",
         "count",
-        "loc"
+        "loc",
+        "line of code"
     ],
     "repository": {
         "type": "git",

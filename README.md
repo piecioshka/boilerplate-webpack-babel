@@ -40,18 +40,23 @@ https://github.com/piecioshka/boilerplate-babel-webpack/archive/master.zip
 
 ## How to build the application?
 
-```bash
-npm install
-npm run build
-# Open public/ directory in browser
-```
+* development
 
-Your source will be minified.
+    ```bash
+    npm run build
+    # Open public/ directory in browser
+    ```
+
+* production
+
+    ```bash
+    npm run build:production
+    # Open public/ directory in browser
+    ```
 
 ## How to develop the application?
 
 ```bash
-npm install
 npm run watch
 # Open public/ directory in browser
 ```
@@ -83,6 +88,7 @@ npm run count
 If you would like to check how much a bundle file weight:
 
 ```bash
+npm run build
 npm run audit
 ```
 
