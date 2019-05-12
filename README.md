@@ -8,12 +8,12 @@
 
 ## Features
 
-* :white_check_mark: Webpack v4.29.6
-* :white_check_mark: Babel v7.3.4
-* :white_check_mark: Support syntax ES2015 & ES2016 & ES2017 & ES2018
-* :white_check_mark: Static directory: `public/`
-* :white_check_mark: Source Map of bundle file.
-* :white_check_mark: Analysis of bundle file weight.
+* :white_check_mark: Webpack `v4.31.0`
+* :white_check_mark: Babel (Core) `v7.4.4`
+* :white_check_mark: Support syntax `ES2015+`
+* :white_check_mark: Static directory `public/`
+* :white_check_mark: Analysis of bundle file weight (`source-map-explorer`)
+* :white_check_mark: Two build settings: dev (with source maps) & prod (compress file)
 
 ## Getting started
 
@@ -35,31 +35,32 @@ or ...
 ### Use Zip
 
 1. Download package file:<br/>
-https://github.com/piecioshka/boilerplate-babel-webpack/archive/master.zip
+    <https://github.com/piecioshka/boilerplate-babel-webpack/archive/master.zip>
 2. Extract it to your project directory.
 
-## How to build the application?
+## How to build an application?
 
 * development
 
     ```bash
     npm run build
-    # Open public/ directory in browser
     ```
 
 * production
 
     ```bash
     npm run build:production
-    # Open public/ directory in browser
     ```
 
-## How to develop the application?
+_Open public/ directory in browser._
+
+## How to develop an application?
 
 ```bash
 npm run watch
-# Open public/ directory in browser
 ```
+
+_Open public/ directory in browser._
 
 ## Remove generated directory
 
