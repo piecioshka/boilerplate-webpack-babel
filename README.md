@@ -7,12 +7,14 @@
 
 ## Features
 
-* :white_check_mark: Webpack `v4.42.0`
+* :white_check_mark: Webpack `v4.42.1`
 * :white_check_mark: Babel (Core) `v7.9.0`
 * :white_check_mark: Support syntax `ES2015+`
-* :white_check_mark: Static directory `public/`
+* :white_check_mark: Static directory `dist/`
+* :white_check_mark: Development with `webpack-dev-server`
+* :white_check_mark: Hosting with `http-server`
 * :white_check_mark: Analysis of bundle file weight (`source-map-explorer`)
-* :white_check_mark: Two build settings: dev (with source maps) & prod (compress file)
+* :white_check_mark: Two build strategies: **dev** (with source maps) & **prod** (compress file)
 
 ## Getting started
 
@@ -51,25 +53,26 @@ or ...
     npm run build:production
     ```
 
-_Open public/ directory in browser._
+Open `dist/` directory in browser by `npm start`.
 
 ## How to develop an application?
 
 ```bash
-npm run watch
+npm run dev     # use webpack-dev-server
+npm run watch   # use webpack -w
 ```
 
-_Open public/ directory in browser._
+Open `dist/` directory in browser by `npm start`.
 
 ## Remove generated directory
 
-If you would like to remove `public/dist` directory (created by Webpack):
+If you would like to remove `dist/` directory:
 
 ```bash
 npm run clear
 ```
 
-If you would like to remove `node_modules/` and remove `public/dist/`
+If you would like to remove `node_modules/` and remove `dist/`
 
 ```bash
 npm run clear:all
