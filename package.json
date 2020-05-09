@@ -9,16 +9,17 @@
         "url": "https://piecioshka.pl"
     },
     "scripts": {
-        "audit": "source-map-explorer dist/bundle.js",
         "clear": "rm -rf dist/",
         "clear:all": "rm -rf node_modules/ && npm run clear",
         "count": "find src -name '*.js' | xargs wc -l | sort -r",
         "build": "npm run build:development",
-        "build:development": "webpack --config webpack/webpack.config.dev.js",
-        "build:production": "webpack --config webpack/webpack.config.prod.js",
+        "build:development": "webpack --config webpack/webpack.config.js",
+        "build:production": "webpack --config webpack/webpack.config.js --env.production",
         "watch": "npm run build:development -- -w",
-        "start": "http-server dist/",
-        "dev": "webpack-dev-server --config webpack/webpack.config.dev.js"
+        "start": "http-server dist/ -c-1",
+        "dev": "webpack-dev-server --config webpack/webpack.config.js",
+        "stats:development": "npm run build:development -- --env.addons bundleanalyzer",
+        "stats:production": "npm run build:production -- --env.addons bundleanalyzer"
     },
     "devDependencies": {
         "@babel/core": "^7.9.0",
@@ -26,8 +27,8 @@
         "babel-loader": "^8.1.0",
         "file-loader": "^6.0.0",
         "http-server": "^0.12.1",
-        "source-map-explorer": "^2.4.2",
         "webpack": "^4.42.1",
+        "webpack-bundle-analyzer": "^3.7.0",
         "webpack-cli": "^3.3.11",
         "webpack-dev-server": "^3.10.3"
     },

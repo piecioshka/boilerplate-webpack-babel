@@ -13,7 +13,7 @@
 * :white_check_mark: Static directory `dist/`
 * :white_check_mark: Development with `webpack-dev-server`
 * :white_check_mark: Hosting with `http-server`
-* :white_check_mark: Analysis of bundle file weight (`source-map-explorer`)
+* :white_check_mark: Bundle file size analytics with `webpack-bundle-analyzer`
 * :white_check_mark: Two build strategies: **dev** (with source maps) & **prod** (compress file)
 
 ## Getting started
@@ -91,10 +91,10 @@ npm run count
 If you would like to check how much a bundle file weight:
 
 ```bash
-npm run build
-npm run audit
+npm run build:development -- --env.addons bundleanalyzer
+npm run build:production -- --env.addons bundleanalyzer
 ```
 
 ## License
 
-[The MIT License](http://piecioshka.mit-license.org) @ 2017
+[The MIT License](http://piecioshka.mit-license.org) @ 2017-2020
