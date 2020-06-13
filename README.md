@@ -3,7 +3,7 @@
 [![npm version](https://badge.fury.io/js/boilerplate-babel-webpack.svg)](https://badge.fury.io/js/boilerplate-babel-webpack)
 [![downloads count](https://img.shields.io/npm/dt/boilerplate-babel-webpack.svg)](https://www.npmjs.com/~piecioshka)
 
-:fork_and_knife: Starter with Babel.js and Webpack
+:fork_and_knife: Starter with Webpack & Babel.js
 
 ## Features
 
