@@ -1,5 +1,5 @@
 {
-    "name": "boilerplate-babel-webpack",
+    "name": "boilerplate-webpack-babel",
     "version": "1.2.0",
     "description": "Starter with Babel.js and Webpack",
     "license": "MIT",
@@ -47,6 +47,6 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/piecioshka/boilerplate-babel-webpack"
+        "url": "https://github.com/piecioshka/boilerplate-webpack-babel"
     }
 }

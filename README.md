@@ -1,9 +1,6 @@
-# boilerplate-babel-webpack
+# boilerplate-webpack-babel
 
-[![npm version](https://badge.fury.io/js/boilerplate-babel-webpack.svg)](https://badge.fury.io/js/boilerplate-babel-webpack)
-[![downloads count](https://img.shields.io/npm/dt/boilerplate-babel-webpack.svg)](https://www.npmjs.com/~piecioshka)
-
-:fork_and_knife: Starter with Webpack & Babel.js
+🍴 Starter with Webpack & Babel.js
 
 ## Features
 
@@ -26,7 +23,7 @@ You can start in two ways:
 mkdir PROJECT_NAME
 cd $_     # Note: "$_" is last argument of previous command
 git init  # Note: branch "master" is created
-git remote add boilerplate git@github.com:piecioshka/boilerplate-babel-webpack.git
+git remote add boilerplate git@github.com:piecioshka/boilerplate-webpack-babel.git
 git pull boilerplate master
 git remote remove boilerplate
 ```
@@ -36,7 +33,7 @@ or ...
 ### Use Zip
 
 1. Download package file:<br/>
-    <https://github.com/piecioshka/boilerplate-babel-webpack/archive/master.zip>
+    <https://github.com/piecioshka/boilerplate-webpack-babel/archive/master.zip>
 2. Extract it to your project directory.
 
 ## How to build an application?
