@@ -21,7 +21,7 @@ You can start in two ways:
 
 ```bash
 mkdir PROJECT_NAME
-cd $_     # Note: "$_" is last argument of previous command
+cd $_     # Note: "$_" is the last argument of the previous command
 git init  # Note: branch "master" is created
 git remote add boilerplate git@github.com:piecioshka/boilerplate-webpack-babel.git
 git pull boilerplate master
@@ -32,58 +32,36 @@ or ...
 
 ### Use Zip
 
-1. Download package file:<br/>
+1. Download package file:
     <https://github.com/piecioshka/boilerplate-webpack-babel/archive/master.zip>
 2. Extract it to your project directory.
 
 ## How to build an application?
 
-* development
+```bash
+npm run build               # Development mode
+npm run build:production    # Production mode
+```
 
-    ```bash
-    npm run build
-    ```
-
-* production
-
-    ```bash
-    npm run build:production
-    ```
-
-Open `dist/` directory in browser by `npm start`.
+_Open `dist/` directory in browser by `npm start`._
 
 ## How to develop an application?
 
 ```bash
-npm run dev     # use webpack-dev-server
-npm run watch   # use webpack -w
+npm run dev     # Use webpack-dev-server
+npm run watch   # Use webpack -w
 ```
 
-Open `dist/` directory in browser by `npm start`.
+_Open `dist/` directory in browser by `npm start`._
 
 ## Remove generated directory
 
-If you would like to remove `dist/` directory:
-
 ```bash
-npm run clear
+npm run clear       # Remove only dist/
+npm run clear:all   # Remove dist/ & node_modules/
 ```
 
-If you would like to remove `node_modules/` and remove `dist/`
-
-```bash
-npm run clear:all
-```
-
-## Count LOC (Lines of Code)
-
-If you would like to know how many lines of code you write:
-
-```bash
-npm run count
-```
-
-## Analysis of bundle file weight
+## 🧪 Analysis of bundle file weight
 
 If you would like to check how much a bundle file weight:
 
@@ -91,6 +69,17 @@ If you would like to check how much a bundle file weight:
 npm run build:development -- --env.addons bundleanalyzer
 npm run build:production -- --env.addons bundleanalyzer
 ```
+
+## 🧩 Webpack Addons
+
+When would you like a modified Webpack configuration, please add a new "addon"
+to [webpack/addons/](webpack/addons/) directory.
+
+Each addon will be merge via `webpack-merge`.
+
+See examples:
+
+* [webpack.bundleanalyzer.js](webpack/addons/webpack.bundleanalyzer.js)
 
 ## License
 

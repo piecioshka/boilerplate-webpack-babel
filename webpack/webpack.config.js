@@ -2,9 +2,10 @@
 
 const path = require('path');
 const root = path.join(__dirname, '..');
+const merge = require('webpack-merge');
 
 module.exports = (env) => {
-    const config = {
+    let config = {
         entry: {
             main: path.join(root, 'src', 'main')
         },
@@ -41,15 +42,19 @@ module.exports = (env) => {
 
     // Builds
     const build = env && env.production ? 'prod': 'dev';
-    Object.assign(config, require(
-        path.join(root, 'webpack', 'builds', `webpack.config.${build}`)
-    ));
+    config = merge.smart(
+        config,
+        require(path.join(root, 'webpack', 'builds', `webpack.config.${build}`))
+    );
 
     // Addons
     const addons = getAddons(env);
-    addons.forEach((addon) => Object.assign(config, require(
-        path.join(root, 'webpack', 'addons', `webpack.${addon}`)
-    )));
+    addons.forEach((addon) => {
+        config = merge.smart(
+            config,
+            require(path.join(root, 'webpack', 'addons', `webpack.${addon}`))
+        )
+    });
 
     console.log(`Build mode: \x1b[33m${config.mode}\x1b[0m`);
 

@@ -1,7 +1,8 @@
 {
+    "private": true,
     "name": "boilerplate-webpack-babel",
     "version": "1.2.0",
-    "description": "Starter with Babel.js and Webpack",
+    "description": "Starter with Webpack & Babel.js",
     "license": "MIT",
     "author": {
         "name": "Piotr Kowalski",
@@ -11,15 +12,13 @@
     "scripts": {
         "clear": "rm -rf dist/",
         "clear:all": "rm -rf node_modules/ && npm run clear",
-        "count": "find src -name '*.js' | xargs wc -l | sort -r",
+        "prebuild": "npm run clear",
         "build": "npm run build:development",
         "build:development": "webpack --config webpack/webpack.config.js",
         "build:production": "webpack --config webpack/webpack.config.js --env.production",
         "watch": "npm run build:development -- -w",
         "start": "http-server dist/ -c-1",
-        "dev": "webpack-dev-server --config webpack/webpack.config.js",
-        "stats:development": "npm run build:development -- --env.addons bundleanalyzer",
-        "stats:production": "npm run build:production -- --env.addons bundleanalyzer"
+        "dev": "webpack-dev-server --config webpack/webpack.config.js"
     },
     "devDependencies": {
         "@babel/core": "^7.10.2",
@@ -30,21 +29,9 @@
         "webpack": "^4.43.0",
         "webpack-bundle-analyzer": "^3.8.0",
         "webpack-cli": "^3.3.11",
-        "webpack-dev-server": "^3.11.0"
+        "webpack-dev-server": "^3.11.0",
+        "webpack-merge": "^4.2.2"
     },
-    "keywords": [
-        "webpack",
-        "module",
-        "bundler",
-        "babel",
-        "starter",
-        "boilerplate",
-        "source map",
-        "explorer",
-        "count",
-        "loc",
-        "line of code"
-    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/piecioshka/boilerplate-webpack-babel"
