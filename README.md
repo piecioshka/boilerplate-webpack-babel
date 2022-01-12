@@ -4,8 +4,8 @@
 
 ## Features
 
-* :white_check_mark: Webpack `v4.43.0`
-* :white_check_mark: Babel (Core) `v7.10.2`
+* :white_check_mark: Webpack `v5.66.0`
+* :white_check_mark: Babel (Core) `v7.16.7`
 * :white_check_mark: Support syntax `ES2015+`
 * :white_check_mark: Static directory `dist/`
 * :white_check_mark: Development with `webpack-dev-server`
@@ -40,6 +40,7 @@ or ...
 
 ```bash
 npm run build               # Development mode
+npm run build:development   # Development mode
 npm run build:production    # Production mode
 ```
 
@@ -66,8 +67,8 @@ npm run clear:all   # Remove dist/ & node_modules/
 If you would like to check how much a bundle file weight:
 
 ```bash
-npm run build:development -- --env.addons bundleanalyzer
-npm run build:production -- --env.addons bundleanalyzer
+npm run build:development -- --env addons=bundleanalyzer
+npm run build:production -- --env addons=bundleanalyzer
 ```
 
 ## 🧩 Webpack Addons
@@ -81,6 +82,13 @@ See examples:
 
 * [webpack.bundleanalyzer.js](webpack/addons/webpack.bundleanalyzer.js)
 
+### How to run addons?
+
+```bash
+npm run build:development -- --env addons=singleAddon
+npm run build:production -- --env addons=firstAddon,secondAddon
+```
+
 ## License
 
-[The MIT License](http://piecioshka.mit-license.org) @ 2017-2020
+[The MIT License](http://piecioshka.mit-license.org) @ 2017-2022
