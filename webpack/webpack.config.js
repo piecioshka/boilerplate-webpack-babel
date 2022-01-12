@@ -33,16 +33,12 @@ module.exports = (env) => {
             ]
         },
 
-        plugins: [],
-
-        devServer: {
-            overlay: true,
-        }
+        plugins: []
     };
 
     // Builds
     const build = env && env.production ? 'prod': 'dev';
-    config = merge.smart(
+    config = merge.merge(
         config,
         require(path.join(root, 'webpack', 'builds', `webpack.config.${build}`))
     );
@@ -50,7 +46,7 @@ module.exports = (env) => {
     // Addons
     const addons = getAddons(env);
     addons.forEach((addon) => {
-        config = merge.smart(
+        config = merge.merge(
             config,
             require(path.join(root, 'webpack', 'addons', `webpack.${addon}`))
         )
@@ -63,6 +59,6 @@ module.exports = (env) => {
 
 function getAddons(env) {
     if (!env || !env.addons) return [];
-    if (typeof env.addons === 'string') return [env.addons];
+    if (typeof env.addons === 'string') return env.addons.split(',');
     return env.addons;
 }
