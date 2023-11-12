@@ -4,8 +4,8 @@
 
 ## Features
 
-* :white_check_mark: Webpack `v5.66.0`
-* :white_check_mark: Babel (Core) `v7.16.7`
+* :white_check_mark: Webpack
+* :white_check_mark: Babel (Core)
 * :white_check_mark: Support syntax `ES2015+`
 * :white_check_mark: Static directory `dist/`
 * :white_check_mark: Development with `webpack-dev-server`

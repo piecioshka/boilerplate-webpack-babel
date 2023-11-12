@@ -14,11 +14,11 @@
         "clear:all": "rm -rf node_modules/ && npm run clear",
         "prebuild": "npm run clear",
         "build": "npm run build:development",
-        "build:development": "webpack --config webpack/webpack.config.js",
-        "build:production": "webpack --config webpack/webpack.config.js --env production",
+        "build:development": "webpack --config webpack/builds/webpack.config.dev.js",
+        "build:production": "webpack --config webpack/builds/webpack.config.prod.js",
         "watch": "npm run build:development -- -w",
         "start": "http-server dist/ -c-1",
-        "dev": "webpack-dev-server --config webpack/webpack.config.js"
+        "dev": "webpack-dev-server --config webpack/builds/webpack.config.dev.js"
     },
     "devDependencies": {
         "@babel/core": "^7.16.7",

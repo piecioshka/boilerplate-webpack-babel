@@ -1,4 +1,9 @@
-import './index.html';
-import testModule from './scripts/module-a';
+import "./index.html";
+import testModule from "./scripts/module-a";
 
-testModule.test();
+function main() {
+    console.log("boilerplate-webpack-babel");
+    testModule.test();
+}
+
+main();
