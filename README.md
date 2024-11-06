@@ -8,6 +8,7 @@
 * ✅ Babel (Core)
 * ✅ Support syntax `ES2015+`
 * ✅ Distribution directory `dist/`
+* ✅ Directory with files as-is without changes `static/` (they will copied to `dist/static/`)
 * ✅ Development with `webpack-dev-server`
 * ✅ Hosting with `http-server`
 * ✅ Bundle file size analytics with `webpack-bundle-analyzer`
@@ -67,33 +68,28 @@ npm run clear       # Remove only dist/
 npm run clear:all   # Remove dist/ & node_modules/
 ```
 
-## 🧪 Analysis of bundle file weight
-
-If you would like to check how much a bundle file weight:
-
-```bash
-npm run build:development -- --env addons=bundleanalyzer
-npm run build:production -- --env addons=bundleanalyzer
-```
-
 ## 🧩 Webpack Addons
 
 When would you like a modified Webpack configuration, please add a new "addon"
 to [webpack/addons/](webpack/addons/) directory.
 
-Each addon will be merge via `webpack-merge`.
-
-See examples:
-
-* [webpack.bundleanalyzer.js](webpack/addons/webpack.bundleanalyzer.js)
+* [webpack.bundleAnalyzer.js](webpack/addons/webpack.bundleAnalyzer.js) - Analysis of bundle file weight
+* [webpack.copyStatic.js](webpack/addons/webpack.copyStatic.js) - Copy directory `static/` to `dist/static/` _(Enabled by default)_
 
 ### How to run addons?
 
 ```bash
+# Single addon
+npm run dev -- --env addons=singleAddon
+npm run build -- --env addons=singleAddon
+npm run watch -- --env addons=singleAddon
 npm run build:development -- --env addons=singleAddon
-npm run build:production -- --env addons=firstAddon,secondAddon
+npm run build:production -- --env addons=singleAddon
+
+## Multiple addons
+npm run dev -- --env addons=firstAddon,secondAddon
 ```
 
 ## License
 
-[The MIT License](http://piecioshka.mit-license.org) @ 2017-2022
+[The MIT License](https://piecioshka.mit-license.org) @ 2017-2024

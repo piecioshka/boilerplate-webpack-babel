@@ -14,16 +14,17 @@
         "clear:all": "rm -rf node_modules/ && npm run clear",
         "prebuild": "npm run clear",
         "build": "npm run build:development",
-        "build:development": "webpack --config webpack/builds/webpack.config.dev.js",
-        "build:production": "webpack --config webpack/builds/webpack.config.prod.js",
+        "build:development": "webpack --config webpack/builds/webpack.config.dev.js --env addons=copyStatic",
+        "build:production": "webpack --config webpack/builds/webpack.config.prod.js --env addons=copyStatic",
         "watch": "npm run build:development -- -w",
         "start": "http-server dist/ -c-1",
-        "dev": "webpack-dev-server --config webpack/builds/webpack.config.dev.js"
+        "dev": "webpack-dev-server --config webpack/builds/webpack.config.dev.js --env addons=copyStatic"
     },
     "devDependencies": {
         "@babel/core": "^7.26.0",
         "@babel/preset-env": "^7.26.0",
         "babel-loader": "^9.2.1",
+        "copy-webpack-plugin": "^12.0.2",
         "file-loader": "^6.2.0",
         "http-server": "^14.1.1",
         "webpack": "^5.96.1",
