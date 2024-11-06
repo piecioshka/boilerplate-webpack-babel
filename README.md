@@ -4,14 +4,14 @@
 
 ## Features
 
-* :white_check_mark: Webpack
-* :white_check_mark: Babel (Core)
-* :white_check_mark: Support syntax `ES2015+`
-* :white_check_mark: Static directory `dist/`
-* :white_check_mark: Development with `webpack-dev-server`
-* :white_check_mark: Hosting with `http-server`
-* :white_check_mark: Bundle file size analytics with `webpack-bundle-analyzer`
-* :white_check_mark: Two build strategies: **dev** (with source maps) & **prod** (compress file)
+* ✅ Webpack
+* ✅ Babel (Core)
+* ✅ Support syntax `ES2015+`
+* ✅ Static directory `dist/`
+* ✅ Development with `webpack-dev-server`
+* ✅ Hosting with `http-server`
+* ✅ Bundle file size analytics with `webpack-bundle-analyzer`
+* ✅ Two build strategies: **dev** (with source maps) & **prod** (compress file)
 
 ## Getting started
 
