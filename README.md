@@ -4,15 +4,15 @@
 
 ## Features
 
-* ✅ Webpack
-* ✅ Babel (Core)
-* ✅ Support syntax `ES2015+`
-* ✅ Distribution directory `dist/`
-* ✅ Directory with files as-is without changes `static/` (they will copied to `dist/static/`)
-* ✅ Development with `webpack-dev-server`
-* ✅ Hosting with `http-server`
-* ✅ Bundle file size analytics with `webpack-bundle-analyzer`
-* ✅ Two build strategies: **dev** (with source maps) & **prod** (compress file)
+- ✅ Webpack
+- ✅ Babel (Core)
+- ✅ Support syntax `ES2015+`
+- ✅ Distribution directory `dist/`
+- ✅ Directory with files as-is without changes `static/` (they will copied to `dist/static/`)
+- ✅ Development with `webpack-dev-server`
+- ✅ Hosting with `http-server`
+- ✅ Bundle file size analytics with `webpack-bundle-analyzer`
+- ✅ Two build strategies: **dev** (with source maps) & **prod** (compress file)
 
 ## Getting started
 
@@ -73,8 +73,8 @@ npm run clear:all   # Remove dist/ & node_modules/
 When would you like a modified Webpack configuration, please add a new "addon"
 to [webpack/addons/](webpack/addons/) directory.
 
-* [webpack.bundleAnalyzer.js](webpack/addons/webpack.bundleAnalyzer.js) - Analysis of bundle file weight
-* [webpack.copyStatic.js](webpack/addons/webpack.copyStatic.js) - Copy directory `static/` to `dist/static/` _(Enabled by default)_
+- [webpack.bundleAnalyzer.js](webpack/addons/webpack.bundleAnalyzer.js) - Analysis of bundle file weight
+- [webpack.copyStatic.js](webpack/addons/webpack.copyStatic.js) - Copy directory `static/` to `dist/static/` _(Enabled by default)_
 
 ### How to run addons?
 
@@ -92,4 +92,4 @@ npm run dev -- --env addons=firstAddon,secondAddon
 
 ## License
 
-[The MIT License](https://piecioshka.mit-license.org) @ 2017-2024
+[The MIT License](https://piecioshka.mit-license.org) @ 2017
